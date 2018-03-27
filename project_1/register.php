@@ -1,13 +1,13 @@
 <?php
 
-
-include (  "account_info.php"  );
+include (  "accountInfo.php"  );
 include (  "functions.php"     ) ;
-mysql_connect ( $hostname, $username, $password ) 
+mysql_connect ( $hostname, $username, $password )
        or die ( "Unable to connect to MySQL database" ); //used to connect to Database
 
 mysql_select_db( $project );  //select the DB
-//Code to grab data from the HTML
+
+//Code to obtain files from the HTML
 $fname  =  $_GET[ "fname"  ];
 $lname  =  $_GET[ "lname"  ];
 $email  =  $_GET[ "email"  ];
@@ -22,6 +22,7 @@ $password  =  $_GET[ "password"  ];
 
 checkReg($fname , $lname, $email, $phone, $birthday, $gender, $password);
 register($fname , $lname, $email, $phone, $birthday, $gender, $password);
+
 
 
 
