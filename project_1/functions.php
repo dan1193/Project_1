@@ -27,14 +27,9 @@ function register ($fname , $lname, $email, $phone, $birthday, $gender, $passwor
 	
 }
 
-
-
-
-
-
-
-
-
-
+function checkFields ($email, $password){
+    if ($email == "" || $password == "") redirect( "Missing field" , "index.html");
+    // If any field is missing, tell user "Missing field" and redirect
+}
 
 ?>
