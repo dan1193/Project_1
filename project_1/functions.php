@@ -40,8 +40,9 @@ function checkFields ($email, $password){
 function login($email, $password){
     $login = "SELECT * FROM accounts WHERE email = '$email'  and password = '$password'";
     $login_q = mysql_query($login) or die('Error on checking Username and Password');
+    $row = mysql_fetch_array($login_q);
    if (mysql_num_rows($login_q) == 1){
-        redirect( "You're logged in" , "index.html");
+        redirect("Welcome ". $row[fname]." ". $row[lname]. " <br> You're logged in" , "index.html");
     }
     else {
         redirect( "Incorrect Login, please try again" , "login.html");
