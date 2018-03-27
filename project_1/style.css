@@ -95,6 +95,11 @@ input:focus {
     font-weight: bold;
 }
 
+#reset {
+    font:16px "Bonveno", "Century Gothic";
+    font-weight: bold;
+}
+
 h1 {
     color: black;
     text-align: center;

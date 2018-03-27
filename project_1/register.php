@@ -1,3 +1,22 @@
+<html>
+<head>
+<link href ="style.css"
+rel="stylesheet">
+<title>IS218 Project 1 Registration Page</title>
+</head>
+<h1>Sign up!</h1>
+<body>
+        <div id="Navigation">
+            <ul class="Navigation">
+                <li><a href="index.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>            
+</body>
+</html>
+<br><br><br><br><br>
+
+
 <?php
 
 include (  "accountInfo.php"  );
